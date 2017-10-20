@@ -1,0 +1,16 @@
+year: 2015
+
+dates:
+  - 2015-10-04
+  - 2015-10-07
+
+location:
+  country: USA
+  state: California
+  city: Monterey
+  venue: Portola Hotel and Spa
+
+deadlines:
+  - abstract: 2015-03-19
+  - paper: 2015-03-26
+  - notification: 2015-06-29
