@@ -1,0 +1,18 @@
+year: 2014
+
+dates:
+  - 2014-10-06
+  - 2014-10-08
+
+location:
+  country: USA
+  state: Colorado
+  city: Broomfield
+  venue: Omni Interlocken Hotel
+
+deadlines:
+  abstract: 2014-04-24
+  paper: 2014-05-01
+  notification: 2014-07-17
+
+homepage: https://www.usenix.org/conference/osdi14
