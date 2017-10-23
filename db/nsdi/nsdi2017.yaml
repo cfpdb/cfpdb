@@ -1,0 +1,21 @@
+year: 2017
+
+dates:
+  - 2017-03-27
+  - 2017-03-29
+
+location:
+  country: USA
+  state: MA
+  city: Boston
+  venue: Boston Marriott Long Wharf
+
+deadlines:
+  paper:
+    abstract: 2016-09-14
+    submit: 2016-09-21
+    notification: 2016-12-05
+  poster:
+    abstract: 2017-02-06
+
+homepage: https://www.usenix.org/conference/nsdi17
