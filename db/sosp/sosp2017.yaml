@@ -10,11 +10,15 @@ location:
   venue: Pudong Shangri-La Hotel
 
 deadlines:
-  abstract: 2017-04-14
-  paper: 2017-04-21
-  rebuttal:
-    - 2017-07-20
-    - 2017-07-24
-  notification: 2017-08-07
+  paper:
+    abstract: 2017-04-14
+    submit: 2017-04-21
+    rebuttal:
+      - 2017-07-20
+      - 2017-07-24
+    notification: 2017-08-07
+  poster: 2017-09-20
+  workshop: 2017-03-31
+  tutorial: 2017-08-15
 
 homepage: http://www.sosp.org/2017

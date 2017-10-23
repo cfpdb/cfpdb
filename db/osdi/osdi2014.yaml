@@ -11,8 +11,9 @@ location:
   venue: Omni Interlocken Hotel
 
 deadlines:
-  abstract: 2014-04-24
-  paper: 2014-05-01
-  notification: 2014-07-17
+  paper:
+    abstract: 2014-04-24
+    submit: 2014-05-01
+    notification: 2014-07-17
 
 homepage: https://www.usenix.org/conference/osdi14

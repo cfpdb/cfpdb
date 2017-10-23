@@ -11,8 +11,14 @@ location:
   venue: Nemacolin Woodlands Resort
 
 deadlines:
-  abstract: 2013-03-21
-  paper: 2013-03-28
-  notification: 2013-07-01
+  paper:
+    abstract: 2013-03-21
+    submit: 2013-03-28
+    notification: 2013-07-01
+  wip:
+    abstract: 2013-08-20
+  poster:
+    abstract: 2013-08-20
+  workshop: 2012-12-07
 
 homepage: http://www.sosp.org/2013
