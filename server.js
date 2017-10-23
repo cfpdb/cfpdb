@@ -21,6 +21,18 @@ fs.readdirSync(db_dir).forEach(cname => {
         console.log("loading call: " + ypath)
         const data = fs.readFileSync(ypath)
         const doc = yaml.load(data)
+
+        // normalize deadlines
+        //   1. convert bare date to { submit: date }
+        for (key in doc.deadlines) {
+          const val = doc.deadlines[key]
+          if (val instanceof Date) {
+            doc.deadlines[key] = {
+              submit: val
+            }
+          }
+        }
+
         doc['target'] = cname
         calls.insert(doc)
       }
