@@ -30,19 +30,20 @@ const schema = {
         }
       ]
     },
+    "namedDateSet": {
+      "type": "object",
+      "properties": {
+        "abstract":     { "$ref": "#/definitions/dates" },
+        "submit":       { "$ref": "#/definitions/dates" },
+        "notification": { "$ref": "#/definitions/dates" },
+        "rebuttal":     { "$ref": "#/definitions/dates" },
+      },
+      "additionalProperties": false
+    },
     "dateSet": {
       "oneOf": [
         { "$ref": "#/definitions/dates" },
-        {
-          "type": "object",
-          "properties": {
-            "abstract":     { "$ref": "#/definitions/dates" },
-            "submit":       { "$ref": "#/definitions/dates" },
-            "notification": { "$ref": "#/definitions/dates" },
-            "rebuttal":     { "$ref": "#/definitions/dates" },
-          },
-          "additionalProperties": false
-        },
+        { "$ref": "#/definitions/namedDateSet" }
       ]
     }
   },
@@ -53,7 +54,7 @@ const schema = {
     "dates": { "$ref": "#/definitions/dates" },
     "deadlines": {
       "oneOf": [
-        { "$ref": "#/definitions/dateSet" },
+        { "$ref": "#/definitions/namedDateSet" },
         {
           "type": "object",
           "properties": {
