@@ -1,21 +1,26 @@
-describe('xcall parser', () => {
-  test('empty', () => {
-    expect(true).toBe(true)
-  });
-})
+const fs = require('fs')
+const path = require('path')
+const parser = require("../parser.js")
 
-describe("hello", () => {
-  var tests = [1, 2]
-  tests.forEach(function(test) {
-    it("what " + test, function() {
-      expect(true).toBe(true)
-    })
+function test_cases(dir) {
+  const case_dir = path.join("test", dir)
+  return fs.readdirSync(case_dir).map(cname => {
+    return path.join(case_dir, cname)
+  })
+}
+
+test_cases("pass").forEach(fname => {
+  test("file " + fname + " parses", function() {
+    const data = fs.readFileSync(fname)
+    parser(data)
   })
 })
 
-var tests = [1, 2]
-tests.forEach(function(testx) {
-  test("what " + testx, function() {
-    expect(true).toBe(true)
+test_cases("fail").forEach(fname => {
+  test("file " + fname + " doesn't parse", function() {
+    const data = fs.readFileSync(fname)
+    expect(() => {
+      parser(data)
+    }).toThrow()
   })
 })

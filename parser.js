@@ -92,7 +92,6 @@ module.exports = function(data) {
     schema: yaml.JSON_SCHEMA
   })
   if (!validate(doc)) {
-    console.log(validate.errors);
     assert(false);
   }
   return doc
