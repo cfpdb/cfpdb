@@ -1,0 +1,22 @@
+year: 2017
+
+dates:
+  - 2017-11-12
+  - 2017-11-17
+
+location:
+  country: USA
+  state: CO
+  city: Denver
+  venue: Colorado Convention Center
+
+deadlines:
+  paper:
+    abstract: 2017-03-20
+    submit: 2017-03-27
+    rebuttal:
+      - 2017-05-23
+      - 2017-05-26
+    notification: 2017-06-15
+
+homepage: https://sc17.supercomputing.org
