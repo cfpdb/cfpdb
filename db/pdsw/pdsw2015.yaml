@@ -1,0 +1,20 @@
+year: 2015
+
+dates: 2015-11-16
+
+location:
+  country: USA
+  state: Texas
+  city: Austin
+
+colocated: supercomputing2015
+
+deadlines:
+  paper:
+    submit: 2015-09-16
+    notification: 2015-09-30
+  wip:
+    submit: 2015-11-01
+    notification: 2015-11-06
+
+homepage: http
