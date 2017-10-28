@@ -1,0 +1,20 @@
+year: 2017
+
+dates: 2017-11-13
+
+location:
+  country: USA
+  state: Colorado
+  city: Denver
+
+colocated: supercomputing2017
+
+deadlines:
+  paper:
+    submit: 2017-09-01
+    notification: 2017-09-29
+  wip:
+    submit: 2017-11-01
+    notification: 2017-11-07
+
+homepage: http://www.pdsw.org/index.shtml
