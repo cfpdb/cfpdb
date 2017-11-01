@@ -12,14 +12,12 @@ const schema = {
       "normalizeDates": true,
       "oneOf": [
         {
-          "type": "string",
-          "format": "date"
+          "instanceof": "Date"
         },
         {
           "type": "array",
           "items": {
-            "type": "string",
-            "format": "date"
+            "instanceof": "Date"
           },
           "uniqueItems": true,
           "minItems": 2
@@ -82,13 +80,14 @@ const schema = {
 }
 
 const ajv = new Ajv({ allErrors: true, verbose: true });
+require('ajv-keywords')(ajv, 'instanceof')
 
 ajv.addKeyword('normalizeDates', {
   modifying: true,
   schema: false,
   valid: true,
   validate: function(data, dataPath, parentData, parentDataProperty) {
-    if (typeof data === 'string') {
+    if (data instanceof Date) {
       parentData[parentDataProperty] = [data]
     }
   }
@@ -108,10 +107,9 @@ ajv.addKeyword('normalizeDateSet', {
 const validate = ajv.compile(schema)
 
 module.exports = function(data) {
-  const doc = yaml.load(data, {
-    schema: yaml.JSON_SCHEMA
-  })
+  const doc = yaml.load(data);
   if (!validate(doc)) {
+    console.log(validate.errors)
     assert(false);
   }
   return doc
