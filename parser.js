@@ -9,6 +9,7 @@ const schema = {
   "type": "object",
   "definitions": {
     "dates": {
+      "normalizeDates": true,
       "oneOf": [
         {
           "type": "string",
@@ -36,6 +37,7 @@ const schema = {
       "additionalProperties": false
     },
     "dateSet": {
+      "normalizeDateSet": true,
       "oneOf": [
         { "$ref": "#/definitions/dates" },
         { "$ref": "#/definitions/namedDateSet" }
@@ -80,6 +82,29 @@ const schema = {
 }
 
 const ajv = new Ajv({ allErrors: true, verbose: true });
+
+ajv.addKeyword('normalizeDates', {
+  modifying: true,
+  schema: false,
+  valid: true,
+  validate: function(data, dataPath, parentData, parentDataProperty) {
+    if (typeof data === 'string') {
+      parentData[parentDataProperty] = [data]
+    }
+  }
+})
+
+ajv.addKeyword('normalizeDateSet', {
+  modifying: true,
+  schema: false,
+  valid: true,
+  validate: function(data, dataPath, parentData, parentDataProperty) {
+    if (data.constructor === Array) {
+      parentData[parentDataProperty] = {"submit": data}
+    }
+  }
+})
+
 const validate = ajv.compile(schema)
 
 module.exports = function(data) {
