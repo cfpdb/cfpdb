@@ -11,8 +11,9 @@ location:
   venue: Hyatt Regency Lake Washington
 
 deadlines:
-  abstract: 2017-09-18
-  submit: 2017-09-25
-  notification: 2017-12-11
+  paper:
+    abstract: 2017-09-18
+    submit: 2017-09-25
+    notification: 2017-12-11
 
 homepage: https://www.usenix.org/conference/nsdi18
