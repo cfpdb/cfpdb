@@ -48,20 +48,15 @@ const schema = {
     },
     "dates": { "$ref": "#/definitions/dates" },
     "deadlines": {
-      "oneOf": [
-        { "$ref": "#/definitions/namedDateSet" },
-        {
-          "type": "object",
-          "properties": {
-            "paper":    { "$ref": "#/definitions/dateSet" },
-            "poster":   { "$ref": "#/definitions/dateSet" },
-            "workshop": { "$ref": "#/definitions/dateSet" },
-            "tutorial": { "$ref": "#/definitions/dateSet" },
-            "wip":      { "$ref": "#/definitions/dateSet" }
-          },
-          "additionalProperties": false
-        }
-      ]
+      "type": "object",
+      "properties": {
+        "paper":    { "$ref": "#/definitions/dateSet" },
+        "poster":   { "$ref": "#/definitions/dateSet" },
+        "workshop": { "$ref": "#/definitions/dateSet" },
+        "tutorial": { "$ref": "#/definitions/dateSet" },
+        "wip":      { "$ref": "#/definitions/dateSet" }
+      },
+      "additionalProperties": false
     },
     "location": {
       "type": "object",
