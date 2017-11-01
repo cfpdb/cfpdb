@@ -2,9 +2,6 @@ const yaml = require('js-yaml')
 const Ajv = require('ajv')
 const assert = require('assert')
 
-// TODO: handling date https://github.com/epoberezkin/ajv-keywords
-// TODO: in the short term, just do conversions in the reader and figure out how
-// to get ajv to do everything later...
 const schema = {
   "type": "object",
   "definitions": {
