@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cfpdb/cfpdb.svg?branch=ci)](https://travis-ci.org/cfpdb/cfpdb)
+
 The only required element is `year`, which specifies when the event will be
 held. The following is the smallest allowed event specification. It describes an
 event that will be held in 2018:
