@@ -12,7 +12,7 @@ function test_cases(dir) {
 test_cases("pass").forEach(fname => {
   test("file " + fname + " parses", function() {
     const data = fs.readFileSync(fname)
-    parser(data)
+    parser(data, false)
   })
 })
 
@@ -20,7 +20,7 @@ test_cases("fail").forEach(fname => {
   test("file " + fname + " doesn't parse", function() {
     const data = fs.readFileSync(fname)
     expect(() => {
-      parser(data)
+      parser(data, true)
     }).toThrow()
   })
 })

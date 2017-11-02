@@ -103,10 +103,12 @@ ajv.addKeyword('normalizeDateSet', {
 
 const validate = ajv.compile(schema)
 
-module.exports = function(data) {
+module.exports = function(data, quiet = true) {
   const doc = yaml.load(data);
   if (!validate(doc)) {
-    console.log(validate.errors)
+    if (!quiet) {
+      console.log(validate.errors)
+    }
     assert(false);
   }
   return doc
