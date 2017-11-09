@@ -4,6 +4,7 @@ const assert = require('assert')
 
 const schema = {
   "type": "object",
+  "normalizeDeadlines": true,
   "definitions": {
     "dates": {
       "normalizeDates": true,
@@ -103,6 +104,42 @@ ajv.addKeyword('normalizeDateSet', {
     if (data.constructor === Array) {
       parentData[parentDataProperty] = {"submit": data}
     }
+  }
+})
+
+ajv.addKeyword('normalizeDeadlines', {
+  modifying: true,
+  schema: false,
+  valid: true,
+  validate: function(data, dataPath, parentData, parentDataProperty, rootData) {
+    var wrap = []
+    for (const prop in data) {
+      const res = /^deadlines[0-9]*$/.exec(prop);
+      if (!(res === null)) {
+        wrap.push(prop)
+      }
+    }
+    if (wrap.length == 0) {
+      return
+    } else if (wrap.includes("deadlines")) {
+      assert(wrap.length == 1);
+    } else {
+      assert(wrap.length > 1);
+    }
+    wrap.sort(function(a, b) {
+      const am = /^[a-z]+([0-9]+)$/.exec(a)
+      const bm = /^[a-z]+([0-9]+)$/.exec(b)
+      return parseInt(am[1]) - parseInt(bm[1]);
+    })
+    const update = {
+      "deadlines": wrap.map(function(key) {
+        return data[key]
+      })
+    }
+    for (const i in wrap) {
+      delete rootData[wrap[i]]
+    }
+    Object.assign(rootData, update)
   }
 })
 
