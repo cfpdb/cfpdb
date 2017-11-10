@@ -1,0 +1,72 @@
+year: 2017
+
+dates:
+  - 2017-08-28
+  - 2017-09-01
+
+location:
+  country: Germany
+  city: Munich
+  venue: Technische Universität München
+
+deadlines1:
+  paper:
+    submit: 2016-04-01
+    notification: 2016-05-15
+
+deadlines2:
+  paper:
+    submit: 2016-05-01
+    notification: 2016-06-15
+
+deadlines3:
+  paper:
+    submit: 2016-06-01
+    notification: 2016-07-15
+
+deadlines4:
+  paper:
+    submit: 2016-07-01
+    notification: 2016-08-15
+
+deadlines5:
+  paper:
+    submit: 2016-08-01
+    notification: 2016-09-15
+
+deadlines6:
+  paper:
+    submit: 2016-09-01
+    notification: 2016-10-15
+
+deadlines7:
+  paper:
+    submit: 2016-10-01
+    notification: 2016-11-15
+
+deadlines8:
+  paper:
+    submit: 2016-11-01
+    notification: 2016-12-15
+
+deadlines9:
+  paper:
+    submit: 2016-12-01
+    notification: 2017-01-15
+
+deadlines10:
+  paper:
+    submit: 2017-01-01
+    notification: 2017-02-15
+
+deadlines11:
+  paper:
+    submit: 2017-02-01
+    notification: 2017-03-15
+
+deadlines12:
+  paper:
+    submit: 2017-03-01
+    notification: 2017-04-15
+
+homepage: http://vldb.org/2017/

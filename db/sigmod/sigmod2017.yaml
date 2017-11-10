@@ -1,0 +1,31 @@
+year: 2017
+
+dates:
+  - 2017-05-14
+  - 2017-05-19
+
+location:
+  country: USA
+  state: IL
+  city: Chicago
+  venue: Hilton Chicago
+
+deadlines1:
+  paper1:
+    abstract: 2016-07-15
+    submit: 2016-07-22
+    notification: 2016-09-28
+  paper2:
+    submit: 2016-10-26
+    notification: 2016-11-11
+
+deadlines2:
+  paper1:
+    abstract: 2016-11-04
+    submit: 2016-11-11
+    notification: 2017-01-27
+  paper2:
+    submit: 2017-02-22
+    notification: 2017-03-09
+
+homepage: http://sigmod2017.org/
