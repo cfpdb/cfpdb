@@ -51,3 +51,6 @@ homepage: url
 # name of another target
 colocated: name
 ```
+
+watch out for nested colons
+Alex C. Snoeren: University of California: San Diego

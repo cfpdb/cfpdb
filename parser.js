@@ -58,7 +58,23 @@ const schema = {
       "type": "string",
       "format": "url"
     },
-    "colocated": { "type": "string" }
+    "colocated": { "type": "string" },
+    "people": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "normalizePerson": true,
+        }
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "patternProperties": {
     "^deadlines[0-9]*$": {
@@ -71,7 +87,7 @@ const schema = {
         "wip":      { "$ref": "#/definitions/dateSet" }
       },
       "patternProperties": {
-        "^paper[0-9]*$":    { "$ref": "#/definitions/dateSet" },
+        "^paper[0-9]*$": { "$ref": "#/definitions/dateSet" },
       },
       "additionalProperties": false
     },
@@ -103,6 +119,17 @@ ajv.addKeyword('normalizeDateSet', {
   validate: function(data, dataPath, parentData, parentDataProperty) {
     if (data.constructor === Array) {
       parentData[parentDataProperty] = {"submit": data}
+    }
+  }
+})
+
+ajv.addKeyword('normalizePerson', {
+  modifying: true,
+  schema: false,
+  valid: true,
+  validate: function(data, dataPath, parentData, parentDataProperty) {
+    parentData[parentDataProperty] = {
+      "affiliation": data
     }
   }
 })
