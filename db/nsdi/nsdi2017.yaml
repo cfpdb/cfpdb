@@ -19,3 +19,85 @@ deadlines:
     abstract: 2017-02-06
 
 homepage: https://www.usenix.org/conference/nsdi17
+
+people:
+  Program Co-Chairs:
+    Aditya Akella: University of Wisconsin–Madison
+    Jon Howell: Google
+
+  Program Committee:
+    Sharad Agarwal: Microsoft
+    Tom Anderson: University of Washington
+    Andrea Arpaci-Dusseau: University of Wisconsin—Madison
+    Anirudh Badam: Microsoft
+    Mahesh Balakrishnan: Yale University
+    Fabian Bustamante: Northwestern University
+    Ranveer Chandra: Microsoft
+    David Choffnes: Northeastern University
+    Romit Roy Choudhury: University of Illinois at Urbana-Champaign
+    Mosharaf Chowdhury: University of Michigan
+    Mike Dahlin: Google
+    Anja Feldmann: Technische Universität Berlin
+    Rodrigo Fonseca: Brown University
+    Nate Foster: Cornell University
+    Deepak Ganesan: University of Massachusetts Amherst
+    Phillipa Gill: University of Massachusetts Amherst
+    Srikanth Kandula: Microsoft
+    Teemu Koponen: Styra
+    Sanjeev Kumar: Uber
+    Swarun Kumar: Carnegie Mellon University
+    Wyatt Lloyd: University of Southern California
+    Boon Thau Loo: University of Pennsylvania
+    Jacob Lorch: Microsoft
+    Ratul Mahajan: Microsoft
+    Dahlia Malkhi: VMware
+    Dave Maltz: Microsoft
+    Z. Morley Mao: University of Michigan
+    Michael Mitzenmacher: Harvard University
+    Jason Nieh: Columbia University
+    George Porter: University of California, San Diego
+    Luigi Rizzo: University of Pisa
+    Srini Seshan: Carnegie Mellon University
+    Anees Shaikh: Google
+    Ankit Singla: ETH Zurich
+    Robbert van Renesse: Cornell University
+    Geoff Voelker: University of California, San Diego
+    David Wetherall: Google
+    Adam Wierman: California Institute of Technology
+    John Wilkes: Google
+    Minlan Yu: University of Southern California
+    Heather Zheng: University of California, Santa Barbara
+    Lin Zhong: Rice University
+
+  Poster Session Co-Chairs:
+    Anirudh Badam: Microsoft
+    Mosharaf Chowdhury: University of Michigan
+
+  Steering Committee:
+    Katerina Argyraki: EPFL
+    Paul Barham: Google
+    Nick Feamster: Princeton University
+    Casey Henderson: USENIX Association
+    Arvind Krishnamurthy: University of Washington
+    Jeff Mogul: Google
+    Brian Noble: University of Michigan
+    Timothy Roscoe: ETH Zurich
+    Alex C. Snoeren: University of California, San Diego
+
+topics:
+  - Highly available and reliable networked systems
+  - Security and privacy of networked systems
+  - Distributed storage, caching, and query processing
+  - Energy-efficient computing in networked systems
+  - Cloud/multi-tenant systems
+  - Mobile and embedded/sensor applications and systems
+  - Wireless networked systems
+  - Network measurements, workload, and topology characterization systems
+  - Self-organizing, autonomous, and federated networked systems
+  - Managing, debugging, and diagnosing problems in networked systems
+  - Virtualization and resource management for networked systems and clusters
+  - Systems aspects of networking hardware
+  - Experience with deployed/operational networked systems
+  - Communication and computing over big data on a networked system
+  - Practical aspects of network economics
+  - An innovative solution for a significant problem involving networked systems

@@ -58,7 +58,22 @@ const schema = {
       "type": "string",
       "format": "url"
     },
-    "colocated": { "type": "string" }
+    "colocated": { "type": "string" },
+    "people": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+        }
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "patternProperties": {
     "^deadlines[0-9]*$": {
@@ -71,7 +86,7 @@ const schema = {
         "wip":      { "$ref": "#/definitions/dateSet" }
       },
       "patternProperties": {
-        "^paper[0-9]*$":    { "$ref": "#/definitions/dateSet" },
+        "^paper[0-9]*$": { "$ref": "#/definitions/dateSet" },
       },
       "additionalProperties": false
     },
@@ -199,5 +214,24 @@ module.exports = function(data, quiet = true) {
     }
     assert(false);
   }
+
+  if ('people' in doc) {
+    const groups = []
+    for (const groupName in doc.people) {
+      const people = []
+      for (const personName in doc.people[groupName]) {
+        people.push({
+          'name': personName,
+          'affiliation': doc.people[groupName][personName]
+        })
+      }
+      groups.push({
+        'name': groupName,
+        'persons': people
+      })
+    }
+    doc.people = groups
+  }
+
   return doc
 }
