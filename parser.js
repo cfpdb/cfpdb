@@ -65,7 +65,6 @@ const schema = {
         "type": "object",
         "additionalProperties": {
           "type": "string",
-          "normalizePerson": true,
         }
       }
     },
@@ -119,17 +118,6 @@ ajv.addKeyword('normalizeDateSet', {
   validate: function(data, dataPath, parentData, parentDataProperty) {
     if (data.constructor === Array) {
       parentData[parentDataProperty] = {"submit": data}
-    }
-  }
-})
-
-ajv.addKeyword('normalizePerson', {
-  modifying: true,
-  schema: false,
-  valid: true,
-  validate: function(data, dataPath, parentData, parentDataProperty) {
-    parentData[parentDataProperty] = {
-      "affiliation": data
     }
   }
 })
@@ -226,5 +214,24 @@ module.exports = function(data, quiet = true) {
     }
     assert(false);
   }
+
+  if ('people' in doc) {
+    const groups = []
+    for (const groupName in doc.people) {
+      const people = []
+      for (const personName in doc.people[groupName]) {
+        people.push({
+          'name': personName,
+          'affiliation': doc.people[groupName][personName]
+        })
+      }
+      groups.push({
+        'name': groupName,
+        'persons': people
+      })
+    }
+    doc.people = groups
+  }
+
   return doc
 }
