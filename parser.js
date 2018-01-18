@@ -64,7 +64,7 @@ const schema = {
       "additionalProperties": {
         "type": "object",
         "additionalProperties": {
-          "type": "string",
+          "type": ["string", "null"]
         }
       }
     },
