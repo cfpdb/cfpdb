@@ -22,6 +22,7 @@ fs.readdirSync(db_dir).forEach(cname => {
         const data = fs.readFileSync(ypath)
         const doc = parser(data)
         doc['target'] = cname
+        doc['source_path'] = ypath
         calls.insert(doc)
       }
     })
