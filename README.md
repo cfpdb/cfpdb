@@ -1,21 +1,28 @@
 [![Build Status](https://travis-ci.org/cfpdb/cfpdb.svg?branch=ci)](https://travis-ci.org/cfpdb/cfpdb)
 
-The only required element is `year`, which specifies when the event will be
-held. The following is the smallest allowed event specification. It describes an
-event that will be held in 2018:
+
+# Schema
+
+The only required element is `year`, which specifies the year in which the event
+will take place. The following is the smallest allowed event specification. It
+describes an event that will be held in 2018:
 
 ```yaml
 year: 2018
 ```
 
-```yaml
-# single day
-dates: yyyy-mm-dd
+The exact dates of the event can be specified using the `dates` key. Add a range
+of days by providing the start and end dates, or use the shortcut below for
+single-day events.
 
+```yaml
 # range of days
 dates:
   - yyyy-mm-ddd
   - yyyy-mm-ddd
+
+# single day
+dates: yyyy-mm-dd
 ```
 
 ```yaml
@@ -39,6 +46,14 @@ deadlines:
   wip:
     submit: 2015-11-01
     notification: 2015-11-06
+```
+
+Unaffiliated
+
+```yaml
+people:
+  Publications:
+    Jane Doe:
 ```
 
 types: paper, wip
