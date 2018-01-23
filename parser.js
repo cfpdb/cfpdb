@@ -83,7 +83,8 @@ const schema = {
         "poster":   { "$ref": "#/definitions/dateSet" },
         "workshop": { "$ref": "#/definitions/dateSet" },
         "tutorial": { "$ref": "#/definitions/dateSet" },
-        "wip":      { "$ref": "#/definitions/dateSet" }
+        "wip":      { "$ref": "#/definitions/dateSet" },
+        "bof":      { "$ref": "#/definitions/dateSet" }
       },
       "patternProperties": {
         "^paper[0-9]*$": { "$ref": "#/definitions/dateSet" },
