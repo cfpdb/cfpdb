@@ -1,0 +1,116 @@
+year: 2009
+
+dates:
+  - 2009-10-11
+  - 2009-10-14
+
+location:
+  country: USA
+  city: Big Sky, MT
+  venue: Big Sky Resort
+
+deadlines:
+  paper:
+    abstract: 2009-03-02
+    submit: 2009-03-09
+    notification: 2009-06-15
+  wip:
+    abstract: 2009-08-17
+    notification: 2009-09-01
+  poster:
+    abstract: 2009-08-17
+    notification: 2009-09-01
+  bof:
+    submit: 2009-09-01
+
+homepage: http://www.sosp.org/2009
+
+people:
+  General Chair:
+    Jeanna Neefe Matthews: Clarkson University
+
+  Program Chair:
+    Thomas Anderson: University of Washington
+
+  Program Committee:
+    Lorenzo Alvisi: Univ. Texas-Austin
+    David Andersen: Carnegie-Mellon
+    Tom Anderson: Univ. Washington
+    Andrea Arpaci-Dusseau: Wisconsin
+    Paul Barham: MSR Cambridge
+    Herbert Bos: Vrije Universiteit Amsterdam
+    Mike Burrows: Google
+    Miguel Castro: MSR Cambridge
+    Jeff Chase: Duke
+    Peter Chen: Univ. Michigan
+    Jon Crowcroft: Cambridge University
+    Mike Dahlin: Univ. Texas-Austin
+    Jeff Dean: Google
+    Mike Freedman: Princeton
+    Hermann Härtig: Dresden
+    Steven Hand: Cambridge University
+    Norm Hutchinson: Univ. British Columbia
+    Arvind Krishnamurthy: Univ. Washington
+    Max Krohn: Yale
+    Philip Levis: Stanford
+    Jeff Mogul: HP Labs
+    Andrew Myers: Cornell
+    John Ousterhout: Stanford
+    Sylvia Ratnasamy: Intel Berkeley
+    Timothy Roscoe: ETH Zurich
+    Stefan Savage: UCSD
+    Srini Seshan: Carnegie-Mellon
+    Gun Sirer: Cornell
+    Mike Swift: Wisconsin
+    Helen Wang: MSR Redmond
+    Nickolai Zeldovich: MIT
+    Yuanyuan Zhou: UIUC
+    Zheng Zhang: MSR Asia
+
+  Treasurer:
+    Geoff Kuenning: Harvey Mudd College
+
+  Sponsorship Chair:
+    Sharon Weber: VMware
+
+  Workshop Chair:
+    Marc Fiuczynski: Princeton University
+
+  Publicity:
+    Dilma da Silva: IBM
+
+  Registration:
+    Jacob R. Lorch: Microsoft
+
+  Birds-of-a-Feather Organizer:
+    Christopher Small: BBN Technologies
+
+  Scholarship Chair:
+    Yvonne Coady: University of Victoria
+
+  WIP Chair:
+    Mike Dahlin: University of Texas at Austin
+
+  Poster Session Chair:
+    Mike Swift: University of Wisconsin, Madison
+
+  Webmaster:
+    Todd Deshane: Clarkson University
+
+  Poster Committee:
+    Michael Swift: University of Wisconsin, Madison
+    George Candea: EPFL
+    Steve Gribble: University of Washington
+    Sam King: University of Illinois, Urbana-Champaign
+    Shan Lu: University of Wisconsin, Madison
+    Stefan Sariou: Microsoft Research
+    Michael Walfish: University of Texas at Austin
+
+  WIP Committee:
+    Mike Dahlin: University of Texas at Austin
+    George Candea: EPFL
+    Steve Gribble: University of Washington
+    Sam King: University of Illinois, Urbana-Champaign
+    Shan Lu: University of Wisconsin, Madison
+    Stefan Sariou: Microsoft Research
+    Michael Walfish: University of Texas at Austin
