@@ -1,0 +1,78 @@
+swagger: "2.0"
+info:
+  description: "cfp.pub api"
+  title: "cfp.pub api"
+  version: "0.0.1"
+host: "cfp-pub.appspot.com"
+
+x-google-endpoints:
+  - name: "cfp-pub.appspot.com"
+    allowCors: true
+
+basePath: "/"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+schemes:
+- "https"
+paths:
+  "/targets":
+    get:
+      description: "list targets"
+      operationId: "targets"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Targets"
+  /targets/{target}:
+    get:
+      description: "get target"
+      operationId: "targetOp"
+      parameters:
+      - in: path
+        name: target
+        type: string
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Targets"
+  "/targets/{target}/calls":
+    get:
+      description: "get target calls"
+      operationId: "targetCalls"
+      parameters:
+        - in: path
+          name: target
+          type: string
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Targets"
+  "/targets/{target}/{year}":
+    get:
+      description: "get target year"
+      operationId: "targetYear"
+      parameters:
+        - in: path
+          name: target
+          type: string
+        - in: path
+          name: year
+          type: integer
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Targets"
+
+security:
+- api_key: []
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"

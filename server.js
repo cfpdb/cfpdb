@@ -4,6 +4,7 @@ const express = require('express')
 const loki = require('lokijs')
 const app = express()
 const parser = require('./parser')
+const cors = require('cors')
 
 const db = new loki()
 
@@ -28,6 +29,8 @@ fs.readdirSync(db_dir).forEach(cname => {
     })
   }
 })
+
+app.use(cors())
 
 // targets => list all targets
 app.get('/targets', function (req, res) {
