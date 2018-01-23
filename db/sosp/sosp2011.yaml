@@ -1,0 +1,107 @@
+year: 2011
+
+dates:
+  - 2011-10-23
+  - 2011-10-26
+
+location:
+  country: Portugal
+  city: Cascais
+  venue: Hotel Cascais Miragem
+
+deadlines:
+  paper:
+    abstract: 2011-03-11
+    submit: 2011-03-18
+    notification: 2011-06-30
+  poster:
+    abstract: 2011-08-21
+    notification: 2011-09-04
+  wip:
+    abstract: 2011-09-25
+    notification: 2011-10-09
+
+people:
+  General Chair:
+    Ted Wobber: MSR Silicon Valley
+
+  Program Chair:
+    Peter Druschel: MPI-SWS
+
+  Program Committee:
+    Andrew Birrell: MSR Silicon Valley
+    George Candea: EPFL
+    Mike Dahlin: UT Austin
+    Jeff Dean: Google
+    Peter Druschel: MPI-SWS
+    Bryan Ford: Yale
+    Greg Ganger: CMU
+    Steve Gribble: UW
+    Steve Hand: Cambridge
+    Tim Harris: MSR Cambridge
+    Gernot Heiser: UNSW/NICTA
+    Rebecca Isaacs: MSR Silicon Valley
+    Sam King: UIUC
+    Eddie Kohler: UCLA
+    Philip Levis: Stanford
+    Petros Maniatis: Intel Research Berkeley
+    Robert Morris: MIT
+    Andrew Myers: Cornell
+    Adrian Perrig: CMU
+    Robbert van Renesse: Cornell
+    Ant Rowstron: MSR Cambridge
+    Margo Seltzer: Harvard
+    Marvin Theimer: Amazon
+    Geoff Voelker: UCSD
+    Emmett Witchel: UT Austin
+    Nikolai Zeldovich: MIT
+    Lidong Zhou: MSR Asia
+    YY Zhou: UCSD
+
+  Treasurer:
+    John MacCormick: Dickinson College
+
+  Sponsorship Co-Chairs:
+    Sape Mullender: Alcatel-Lucent
+    Jean-Philippe Martin: MSR Silicon Valley
+    Chandu Thekkath: MSR Silicon Valley
+
+  Workshop Chairs:
+    Ramakrishna Kotla: MSR Silicon Valley
+    Rodrigo Rodrigues: MPI-SWS
+
+  Publicity Co-Chairs:
+    Junfeng Yang: Columbia University
+    Rodrigo Rodrigues: MPI-SWS
+
+  Registration:
+    Joao Leitao: INESC-ID/IST
+
+  Local Arrangements:
+    Luis Rodrigues: INESC-ID/IST
+
+  Scholarship Committee:
+    David Lie: U. of Toronto
+    Dilma da Silva: IBM
+    Nickolai Zeldovich: MIT
+
+  Webmaster:
+    Nuno Carvalho: INESC-ID/IST
+
+  Poster and WIP Co-Chairs:
+    George Candea: EPFL
+    Bryan Ford: Yale
+
+  Poster/WIP Co-Chairs:
+    George Candea: EPFL
+    Bryan Ford: Yale University
+
+  Poster/WIP Program Committee:
+    Andrea Arpaci-Dusseau: University of Wisconsin-Madison
+    Frank Bellosa: Karlsruhe Institute of Technology
+    Emery Berger: U. of Massachusetts - Amherst
+    Andreas Haeberlen: U. of Pennsylvania
+    Galen Hunt: Microsoft Research
+    Jeff Mogul: HP Labs
+    Ion Stoica: UC Berkeley
+    John Wilkes: Google
