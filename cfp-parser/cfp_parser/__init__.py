@@ -4,7 +4,7 @@ import os
 import yaml
 import re
 from jsonschema import validators
-from jsonschema.validators import Draft6Validator
+from jsonschema import Draft6Validator
 
 schema2 = {
     "type": "object",
