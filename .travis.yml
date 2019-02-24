@@ -1,17 +1,9 @@
-language: node_js
-#before_script:
-#  - npm install -g codeclimate-test-reporter
-node_js:
-  - "7"
-  - "8"
-#after_script:
-#  - codeclimate-test-reporter < coverage/lcov.info
-#  - coveralls < coverage/lcov.info
-#  - scripts/travis-gh-pages
-#notifications:
-#  webhooks:
-#    urls:
-#      - https://webhooks.gitter.im/e/9cab5fe0c9595511cd81
-#    on_success: change
-#    on_failure: always
-#    on_start: never
+language: python
+python:
+  - "3.7"
+
+install:
+  pip install -r requirements.txt
+
+script:
+  pytest -v test.py
